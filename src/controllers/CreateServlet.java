@@ -47,7 +47,7 @@ public class CreateServlet extends HttpServlet {
             m.setUpdated_at(currentTime);
 
             em.getTransaction().begin();
-            //em.persist(m);
+            em.persist(m);
             em.getTransaction().commit();
             em.close();
 
